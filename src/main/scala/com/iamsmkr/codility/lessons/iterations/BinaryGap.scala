@@ -1,6 +1,6 @@
 package com.iamsmkr.codility.lessons.iterations
 
-object BinaryGap extends App {
+object BinaryGap {
 
   def solution(n: Int): Int = {
     val binary = n.toBinaryString.toCharArray

@@ -1,6 +1,6 @@
 package com.iamsmkr.codility.lessons.arrays
 
-object CyclicRotation extends App {
+object CyclicRotation {
 
   def solution(a: Array[Int], k: Int): Array[Int] = {
     if (a.nonEmpty) {
