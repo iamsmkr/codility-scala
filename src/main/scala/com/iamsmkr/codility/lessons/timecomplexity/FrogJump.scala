@@ -27,7 +27,7 @@ package com.iamsmkr.codility.lessons.timecomplexity
  * X ≤ Y.
  */
 
-object FrogJump extends App {
+object FrogJump {
   def solution(x: Int, y: Int, d: Int): Int = {
     val distance = y - x
 
