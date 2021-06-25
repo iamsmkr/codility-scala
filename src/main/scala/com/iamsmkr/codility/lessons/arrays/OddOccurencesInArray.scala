@@ -34,7 +34,7 @@ import scala.annotation.tailrec
  * all but one of the values in A occur an even number of times.
  */
 
-object OddOccurencesInArray extends App {
+object OddOccurencesInArray {
 
   // 66% : Correctness = 100%, Performance = 25%
   def solution(a: Array[Int]): Int = {
