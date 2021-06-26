@@ -1,6 +1,5 @@
 package com.iamsmkr.codility.lessons.countingelements
 
-import com.iamsmkr.codility.countingelements.FrogRiverOne
 import org.scalatest.matchers.should
 import org.scalatest.propspec.AnyPropSpec
 import org.scalatestplus.scalacheck.ScalaCheckPropertyChecks
