@@ -8,7 +8,7 @@ class MaxCountersSpec extends AnyPropSpec with should.Matchers with ScalaCheckPr
   property("MaxCounters should be computed max counters correctly") {
     val results =
       Table(
-        ("counters", "arr", "result"),
+        ("x", "arr", "result"),
         (1, Array(2, 1, 1, 2, 1), Array(3)),
         (5, Array(3, 4, 4, 6, 1, 4, 4), Array(3, 2, 2, 4, 2))
       )
