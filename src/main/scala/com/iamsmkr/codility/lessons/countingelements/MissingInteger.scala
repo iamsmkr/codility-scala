@@ -1,4 +1,4 @@
-package com.iamsmkr.codility.demo
+package com.iamsmkr.codility.lessons.countingelements
 
 import scala.annotation.tailrec
 
@@ -21,7 +21,7 @@ import scala.annotation.tailrec
  * each element of array A is an integer within the range [−1,000,000..1,000,000].
  */
 
-object Solution {
+object MissingInteger {
 
   def solution(a: Array[Int]): Int = {
     val posNums = a.toSet.filter(_ > 0)
