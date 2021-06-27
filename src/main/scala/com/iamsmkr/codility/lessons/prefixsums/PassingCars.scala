@@ -56,29 +56,31 @@ object PassingCars {
       if (n == 0) easts += i else wests += i
     }
 
-    var count = 0
+    var passingCars = 0
     for {
       x <- easts
       y <- wests
     } yield {
-      if (x < y) count += 1
+      if (x < y) passingCars += 1
     }
 
-    count
+    if (passingCars > 1000000000) -1 else passingCars
   }
 
   // 60% : Correctness = 100%, Performance = 20%
   def solution2(a: Array[Int]): Int = {
-    val passingCars = mutable.Map[Int, Int]()
+    val passingCarsMap = mutable.Map[Int, Int]()
 
     a.zipWithIndex.foreach { case (n, i) =>
-      if (n == 0 && !passingCars.contains(i))
-        passingCars += (i -> 0)
+      if (n == 0 && !passingCarsMap.contains(i))
+        passingCarsMap += (i -> 0)
       if (n == 1)
-        passingCars.keySet.foreach(k => passingCars += (k -> (passingCars(k) + 1)))
+        passingCarsMap.keySet.foreach(k => passingCarsMap += (k -> (passingCarsMap(k) + 1)))
     }
 
-    passingCars.values.sum
+    val passingCars = passingCarsMap.values.sum
+
+    if (passingCars > 1000000000) -1 else passingCars
   }
 
   def solution3(a: Array[Int]): Int = {
