@@ -19,6 +19,6 @@ package com.iamsmkr.codility.lessons.sorting
  * each element of array A is an integer within the range [−1,000,000..1,000,000].
  */
 
-object Distinct extends App {
+object Distinct {
   def solution(a: Array[Int]): Int = a.distinct.length
 }
