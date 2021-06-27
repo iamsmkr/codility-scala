@@ -46,7 +46,7 @@ import scala.annotation.tailrec
  * string S consists only of upper-case English letters A, C, G, T.
  */
 
-object GenomicRangeQuery extends App {
+object GenomicRangeQuery {
 
   // 62% : Correctness = 100%, Performance = 0%
   def solution(s: String, p: Array[Int], q: Array[Int]): Array[Int] = {
@@ -101,7 +101,4 @@ object GenomicRangeQuery extends App {
   // (2) Solution using segment tree:
   //    (a) https://randxie.github.io/writing/2018/07/01/monoid-and-segment-tree/
 
-  println(solution2("CAGCCTA", Array(2, 5, 0), Array(4, 5, 6)).mkString("Array(", ", ", ")"))
-  println(solution2("GT", Array(0, 0, 1), Array(0, 1, 1)).mkString("Array(", ", ", ")"))
-  println(solution2("TC", Array(0, 0, 1), Array(0, 1, 1)).mkString("Array(", ", ", ")"))
 }
