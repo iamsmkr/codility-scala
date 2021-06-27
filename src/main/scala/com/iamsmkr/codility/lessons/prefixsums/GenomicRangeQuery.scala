@@ -100,5 +100,6 @@ object GenomicRangeQuery {
   //    (c) https://github.com/Firfi/euler-katas/blob/master/src/main/scala/codility/GenomicRangeQuery.scala
   // (2) Solution using segment tree:
   //    (a) https://randxie.github.io/writing/2018/07/01/monoid-and-segment-tree/
+  //    (b) https://github.com/mzhang-code/scala-segtree/blob/master/src/main/scala/segtree/SegTree.scala
 
 }
