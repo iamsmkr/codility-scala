@@ -36,7 +36,7 @@ import scala.util.control.Breaks.break
  * each element of array A is an integer within the range [−2,147,483,648..2,147,483,647].
  */
 
-object Triangle extends App {
+object Triangle {
 
   // 93% : Correctness = 90%, Performance = 100%
   def solution(a: Array[Int]): Int = {
@@ -47,9 +47,4 @@ object Triangle extends App {
 
     0
   }
-
-  //  println(solution(Array(1, 1, 1, 1, 5, 5, 5)))
-//  println(solution(Array(10, 2, 5, 1, 8, 20)))
-  println(solution(Array()))
-//  println(solution(Array(5, 3, 3)))
 }
