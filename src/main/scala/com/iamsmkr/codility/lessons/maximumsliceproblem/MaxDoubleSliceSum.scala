@@ -48,7 +48,7 @@ package com.iamsmkr.codility.lessons.maximumsliceproblem
  * each element of array A is an integer within the range [−10,000..10,000].
  */
 
-object MaxDoubleSliceSum extends App {
+object MaxDoubleSliceSum {
 
   // 53% : Correctness = 100%, Performance = 14%
   def solution(a: Array[Int]): Int = {
@@ -103,5 +103,4 @@ object MaxDoubleSliceSum extends App {
     max
   }
 
-  println(solution3(Array(3, 2, 6, -1, 4, 5, -1, 2)))
 }
