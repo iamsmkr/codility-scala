@@ -43,7 +43,7 @@ package com.iamsmkr.codility.lessons.maximumsliceproblem
 
 object MaxProfit {
 
-  // 66% : Correctness = 100%, Performance = 25%
+  // 88% : Correctness = 100%, Performance = 75%
   def solution(a: Array[Int]): Int = {
     if (a.length < 2) return 0
 
