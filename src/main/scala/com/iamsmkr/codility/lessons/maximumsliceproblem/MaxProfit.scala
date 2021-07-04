@@ -47,7 +47,7 @@ object MaxProfit {
   def solution(a: Array[Int]): Int = {
     if (a.length < 2) return 0
 
-    val deltas = a.sliding(2).map { case Array(x, y) => (x, y) }.map { case (x, y) => y - x }.toArray
+    val deltas = a.sliding(2).map { case Array(x, y) => y - x }.toArray
 
     val maxSumArr = Array.fill(deltas.length)(deltas.head)
 
